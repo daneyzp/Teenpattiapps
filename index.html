@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>teenpattiapps.store</title>
+  <meta name="description" content="Teen Patti, Games, Apps, Mobile Games, Satta, Rumble, Cards Game, Paisa Kamane Wala Games, Download Apk, download apps, download Games" />
+   <!-- Favicon -->
+
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh68RtNR4za4BOI_uJcjyEXj5AI0BZ9eNCVBvjrmNh9yZBLPWuwuTkTvAp8tAQlYdXO96cspTFhwT7u2Hoqe-hFb42gzgvyAAFDJOT-VwCTqbiuF0e5Tq4y2_Ykvb-jrAwMXfyiejPRcsvDwRf8TqyriWxqohHUPW4Y_5NCPZRIwaZdnv8pBMlb5ZHUj8s/s512/teen_patti_gold-2.png" type="image/x-icon" />
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MLN4FPST4H">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MLN4FPST4H');
+</script>
+  
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; }
+
+  /* ===== HEADER ===== */
+  header { background: #111827; color: white; padding: 12px 20px; }
+  .header-content { display: flex; align-items: center; justify-content: space-between; }
+  .header-title { font-size: 20px; font-weight: bold; letter-spacing: 0.5px; }
+  .header-social a { display: inline-flex; align-items: center; margin-left: 12px; }
+  .header-social img { width: 22px; height: 22px; display: block; transition: filter 0.2s ease; }
+  .header-social a:hover img { filter: brightness(1) invert(1) sepia(1) hue-rotate(180deg) saturate(3); }
+img {border-radius: 6px;}
+  /* ===== FOOTER ===== */
+  footer { background: #111827; color: white; padding: 20px; font-size: 14px; text-align: center; margin-top: 30px; }
+  footer nav { margin-bottom: 8px; }
+  footer nav a { color: white; text-decoration: none; margin: 0 10px; }
+  footer nav a:hover { text-decoration: underline; }
+
+  
+  
+  
+  /* ===== Podium ===== */
+  .podium { display: flex; justify-content: center; align-items: flex-end; gap: 8px; flex-wrap: nowrap; padding-top: 25px; }
+  .card { text-align: center; max-width: 90px; flex: 1; }
+  .card img { width: 100%; border-radius: 6px; background: transparent; display: block; }
+  .medal { position: relative; margin-top: -12px; margin-bottom: 5px; }
+  .center { transform: translateY(-15px); }
+  .title { font-weight: bold; font-size: 11px; margin: 3px 0; }
+  .desc { color: orange; font-size: 9px; margin-bottom: 5px; }
+  .download-btn { display: inline-flex; align-items: center; justify-content: center; padding: 8px 12px; border-radius: 999px; border: 1px solid #111827; font-size: 13px; font-weight: 600; text-decoration: none; color: #111827; }
+  .download-btn:hover { background: #111827; color: #fff; }
+
+  /* ===== Post List ===== */
+  #postListWidget { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin-top: 25px; padding: 10px; }
+  .plw-header { font-weight: 600; padding: 8px 6px; }
+  .plw-list { display: flex; flex-direction: column; gap: 10px; }
+  .plw-item { display: flex; align-items: center; gap: 10px; padding: 10px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fff; }
+  .plw-thumb { flex: 0 0 auto; width: 72px; height: 72px; border-radius: 10px; overflow: hidden; background: #f3f4f6; display: grid; place-items: center; }
+  .plw-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .plw-body { flex: 1 1 auto; min-width: 0; }
+  .plw-title { font-size: 15px; line-height: 1.25; font-weight: 600; margin: 0 0 4px 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .plw-desc { font-size: 12px; color: #6b7280; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .plw-actions { flex: 0 0 auto; display: flex; gap: 6px; }
+  .plw-btn { display: inline-flex; align-items: center; justify-content: center; padding: 8px 12px; border-radius: 999px; border: 1px solid #111827; font-size: 13px; font-weight: 600; text-decoration: none; color: #111827; }
+  .info-btn { display: inline-flex; align-items: center; justify-content: center; padding: 8px 15px; border-radius: 999px; border: 1px solid #111827; font-size: 14px; font-weight: bold; color: #111827; background: #fff; cursor: pointer; }
+  .plw-btn:hover, .info-btn:hover { background: #111827; color: #fff; }
+  .plw-loader { text-align: center; padding: 12px; color: #6b7280; display:none; }
+
+  /* ===== Popup Widget ===== */
+  #popupWidget { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 9999; justify-content: center; align-items: center; }
+  #popupContent { background: #fff; border-radius: 12px; padding: 20px; max-width: 90%; max-height: 80%; overflow-y: auto; position: relative; }
+  #popupClose { position: absolute; top: 8px; right: 12px; font-size: 20px; font-weight: bold; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="header-content">
+    <div class="header-title">Teenpattiapps.store</div>
+    <div class="header-social">
+      <a href="https://t.me/rummygamerz" target="_blank" aria-label="Telegram">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD6xfRsdv1PoNCHLU-MLxHy8MsNyLWtDYG-kL87N0WW_fCxnsBkcLOA61jgtSL7NB2G7KvrvrOAWYYe1TM5pb5-zeNSvBR0qLPO6GKK6jolHNF6vzwsJ6STlg8JwdFd2Ad3khZodDFpfJemKTUxOmERS2osOeRTiQ1vAkmqoRGG1IpQ_U4kO0RATncBOA/s1280/20250822_192842.jpg" alt="Telegram" />
+      </a>
+      <!--<a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>-->
+      <a href="https://youtube.com/@teenpattiappstore?si=dJnvHehG6m-zkF20" target="_blank" aria-label="YouTube">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7nFNM1LBCzja-1qqP7_2eFygSPxk-j7em-z8UXVZuHHNBsZoI_AZZrnvB_KAHj59G6EEx8RbtxTHhxto7CSEFiEZn4OYddkz_m30QVyakN0I778AJK7qap94NXttTRNMBWCEu2hBr-28-tpAEKI6bFoy3rp3wDgqqJPUyBUXrB8kZPPXIQOEjuGmMAuQ/s1280/20250822_192421.jpg" alt="YouTube">
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Podium Widget ===== -->
+<div class="podium" id="podium"></div>
+
+<!-- ===== Post List Widget ===== -->
+<div id="postListWidget">
+  <div class="plw-header">More ›</div>
+  <div id="plw-list" class="plw-list"></div>
+  <div id="plw-loader" class="plw-loader">Loading…</div>
+</div>
+
+<!-- ===== Popup Widget ===== -->
+<div id="popupWidget">
+  <div id="popupContent">
+    <span id="popupClose">&times;</span>
+    <div id="postContent">Loading…</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <nav>
+    <a href="About.html">About</a> |
+    <a href="Contact.html">Contact</a> |
+    <a href="Privacy policy.html">Privacy Policy</a> |
+    <a href="Terms.html">T&amp;C</a>
+  </nav>
+  <div>© <span id="year"></span> Teenpattiapps. All rights reserved.</div>
+</footer>
+
+<script>
+// ===== Set Current Year =====
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<!-- ===== PODIUM SCRIPT ===== -->
+<script>
+function showPosts(data) {
+  const medalOrder = { "2nd": { color: "#c0c0c0", number: "2" }, "1st": { color: "#ffd700", number: "1" }, "3rd": { color: "#cd7f32", number: "3" } };
+  const entries = data.feed.entry || [];
+  const postsByRank = { "1st": null, "2nd": null, "3rd": null };
+
+  entries.forEach(post => {
+    const labels = (post.category || []).map(cat => cat.term.toLowerCase());
+    const foundRank = Object.keys(postsByRank).find(rank => labels.includes(rank.toLowerCase()));
+    if (foundRank && !postsByRank[foundRank]) postsByRank[foundRank] = post;
+  });
+
+  const podiumContainer = document.getElementById("podium");
+
+  ["2nd", "1st", "3rd"].forEach(rank => {
+    const post = postsByRank[rank];
+    if (!post) return;
+    const title = post.title.$t;
+    const content = post.content?.$t || "";
+    let cleanText = content.replace(/<[^>]+>/g, "").replace(/&[^;\s]+;/g, "").replace(/https?:\/\/\S+/g, "").trim().split(/\s+/).slice(0, 2).join(" ") + "";
+
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = content;
+    const imgSrc = tempDiv.querySelector("img")?.src || "https://via.placeholder.com/150x100";
+    let firstLink = tempDiv.querySelector("a")?.href || imgSrc || "#";
+
+    const medalSVG = `<svg width="26" height="26" viewBox="0 0 64 64"><circle cx="32" cy="32" r="20" fill="${medalOrder[rank].color}"/><text x="32" y="38" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff">${medalOrder[rank].number}</text></svg>`;
+
+    const card = document.createElement("div");
+    card.className = "card" + (rank === "1st" ? " center" : "");
+    card.innerHTML = `<img src="${imgSrc}" alt="Post Image"><div class="medal">${medalSVG}</div><div class="title">${title}</div><div class="desc">${cleanText}</div><a href="${firstLink}" class="download-btn" target="_blank">DOWNLOAD</a>`;
+    podiumContainer.appendChild(card);
+  });
+}
+</script>
+<script src="https://teenpattiarea.blogspot.com/feeds/posts/default?alt=json-in-script&callback=showPosts"></script>
+
+<!-- ===== POST LIST SCRIPT ===== -->
+<script>
+(function(){
+  const BLOG_URL = 'https://teenpattiarea.blogspot.com';
+  const PAGE_SIZE = 10;
+  const START_INDEX_BASE = 1;
+  let nextIndex = START_INDEX_BASE, loading = false, finished = false;
+  const listEl = document.getElementById('plw-list');
+  const loaderEl = document.getElementById('plw-loader');
+
+  function htmlToNode(html){ const div = document.createElement('div'); div.innerHTML = html; return div; }
+  function stripText(html){ const div = htmlToNode(html); return (div.textContent || '').replace(/\s+/g,' ').trim(); }
+  function firstLinkFromContent(html){ const div = htmlToNode(html || ''); const a = div.querySelector('a[href]'); return a ? a.getAttribute('href') : null; }
+  function imagesFromContent(html){ const div = htmlToNode(html || ''); return Array.from(div.querySelectorAll('img')).map(img => img.src); }
+  function pickThumb(entry){
+    let t = entry.media$thumbnail && entry.media$thumbnail.url ? entry.media$thumbnail.url : null;
+    const content = (entry.content && entry.content.$t) || (entry.summary&& entry.summary.$t) || '';
+    const imgs = imagesFromContent(content);
+    if (!t) { 
+      if (imgs.length >= 2) t = imgs[1]; // Skip first image (logo)
+      else if (imgs.length >= 1) t = imgs[0];
+    }
+    if (t) t = t.replace(/\/s\d+(-c)?\//, '/s160/');
+    return t;
+  }
+
+  function permalink(entry){ 
+    const alt = (entry.link || []).find(l => l.rel === 'alternate'); 
+    return alt ? alt.href : '#'; 
+  }
+
+  function twoWordDesc(entry){
+    const content = (entry.content && entry.content.$t) || (entry.summary && entry.summary.$t) || '';
+    const base = stripText(content) || stripText(entry.title.$t || '') || '';
+    const words = base.split(/\s+/).filter(Boolean);
+    return words.slice(0,2).join(' ') || 'Read more';
+  }
+
+  function renderItem(entry){
+    const title = (entry.title && entry.title.$t) || 'Untitled';
+    const contentHTML = (entry.content && entry.content.$t) || (entry.summary && entry.summary.$t) || '';
+    const dlLink = firstLinkFromContent(contentHTML) || permalink(entry);
+    const thumb = pickThumb(entry);
+    const infoLink = permalink(entry);
+
+    const item = document.createElement('article');
+    item.className = 'plw-item';
+
+    const left = document.createElement('div');
+    left.className = 'plw-thumb';
+    left.innerHTML = thumb ? `<img alt="">` : `<span style="font-size:12px;color:#9ca3af;">No Image</span>`;
+    if (thumb) left.querySelector('img').src = thumb;
+
+    const mid = document.createElement('div');
+    mid.className = 'plw-body';
+    const h3 = document.createElement('h3');
+    h3.className = 'plw-title';
+    h3.textContent = title;
+    const p = document.createElement('p');
+    p.className = 'plw-desc';
+    p.textContent = twoWordDesc(entry);
+    mid.appendChild(h3); mid.appendChild(p);
+
+    const right = document.createElement('div');
+    right.className = 'plw-actions';
+    const infoBtn = document.createElement('button');
+    infoBtn.className = 'info-btn';
+    infoBtn.textContent = '𝒊';
+    infoBtn.onclick = () => openPopup(contentHTML);
+    const a = document.createElement('a');
+    a.className = 'plw-btn';
+    a.textContent = 'Download';
+    a.href = dlLink; a.target = '_blank'; a.rel = 'noopener nofollow';
+
+    right.appendChild(infoBtn);
+    right.appendChild(a);
+
+    item.appendChild(left);
+    item.appendChild(mid);
+    item.appendChild(right);
+
+    return item;
+  }
+
+  function loadPosts(){
+    if (loading || finished) return;
+    loading = true; loaderEl.style.display = 'block';
+    const cbName = 'plw_cb_' + Math.random().toString(36).slice(2);
+    const script = document.createElement('script');
+    const url = `${BLOG_URL.replace(/\/$/,'')}/feeds/posts/default?alt=json-in-script&orderby=published&max-results=${PAGE_SIZE}&start-index=${nextIndex}&callback=${cbName}`;
+    window[cbName] = function(feed){
+      try {
+        const entries = (feed && feed.feed && feed.feed.entry) || [];
+        if (!entries.length) { finished = true; loaderEl.textContent = 'No more posts.'; }
+        else { entries.forEach(e => listEl.appendChild(renderItem(e))); nextIndex += entries.length; loaderEl.style.display = 'none'; }
+      } catch (e) { loaderEl.textContent = 'Error loading posts.'; }
+      finally { loading = false; cleanup(); }
+    };
+    function cleanup(){ delete window[cbName]; if (script.parentNode) script.parentNode.removeChild(script); }
+    script.src = url; script.onerror = function(){ loaderEl.textContent = 'Network error.'; loading = false; cleanup(); };
+    document.body.appendChild(script);
+  }
+
+  function onScroll(){ 
+    if (finished || loading) return; 
+    const nearBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 200); 
+    if (nearBottom) loadPosts(); 
+  }
+
+  loadPosts();
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+
+// ===== Popup Functions =====
+const popup = document.getElementById('popupWidget');
+const popupContent = document.getElementById('postContent');
+const popupClose = document.getElementById('popupClose');
+
+function openPopup(html){
+  popupContent.innerHTML = html;
+  popup.style.display = 'flex';
+}
+
+popupClose.onclick = () => { popup.style.display = 'none'; }
+popup.onclick = (e) => { if(e.target === popup) popup.style.display = 'none'; }
+</script>
+
+  <!--Disable Text highlights and right click -->
+<script type='text/javascript'>
+//<![CDATA[
+document.addEventListener("contextmenu", function(e) { e.preventDefault(); });
+
+document.onkeydown = function(e) {
+  if (
+    e.keyCode === 123 ||
+    (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(String.fromCharCode(e.keyCode))) ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  ) {
+    e.preventDefault();
+    return false;
+  }
+};
+
+let pressTimer;
+document.addEventListener('touchstart', function() {
+  pressTimer = setTimeout(function() {
+    // Silent long press block
+  }, 500);
+});
+document.addEventListener('touchend', function() {
+  clearTimeout(pressTimer);
+});
+//]]>
+</script>
+<style type='text/css'>
+/*<![CDATA[*/
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+html, body {
+  -webkit-tap-highlight-color: transparent;
+}
+/*]]>*/
+</style>
+  
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Floating AD Widget</title>
+<style>
+  /* Floating button */
+  #floatingAdBtn {
+    position: fixed;
+    top: 45%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #ff5722;
+    border: 2px solid #ff5722;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+  /* Hidden state */
+  #floatingAdBtn.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  /* Widget popup */
+  #adWidget {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 90%;
+    background: white;
+    border: 2px solid #ff5722;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+  }
+
+  /* Close button */
+  #adWidgetClose {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<!-- Floating AD Button -->
+<button id="floatingAdBtn">⚠️</button>
+
+<!-- Popup Widget -->
+<div id="adWidget">
+  <button id="adWidgetClose">&times;</button>
+  <h3>Warning ⚠️</h3>
+  <p>इन सभी गेम के अंदर वित्तीय ज्योखिम शामिल है, और इसमें आपका नुकसान भी हो सकता है, तो संभल कर खेलें।</p>
+</div>
+
+<script>
+const adBtn = document.getElementById('floatingAdBtn');
+const adWidget = document.getElementById('adWidget');
+const adClose = document.getElementById('adWidgetClose');
+
+// Show widget automatically once per device
+if (!localStorage.getItem('adWidgetShown')) {
+  adWidget.style.display = 'block';
+  localStorage.setItem('adWidgetShown', 'true');
+}
+
+// Open widget manually
+adBtn.addEventListener('click', () => {
+  adWidget.style.display = 'block';
+});
+
+// Close widget
+adClose.addEventListener('click', () => {
+  adWidget.style.display = 'none';
+});
+
+// Hide floating button on scroll down, show when top
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    adBtn.classList.add('hidden');
+  } else {
+    adBtn.classList.remove('hidden');
+  }
+});
+</script>
+<!-- Social Ads -->
+  
+  
+
+</body>
+</html>
+
+<!-- Post and Pages -->
+
