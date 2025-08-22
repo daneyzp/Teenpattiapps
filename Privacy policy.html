@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; line-height: 1.6;}
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+        p {
+            max-width: 900px;
+            margin: 5%;
+        }
+         /* ===== HEADER ===== */
+  header { background: #111827; color: white; padding: 12px 20px; }
+  .header-content { display: flex; align-items: center; justify-content: space-between; }
+  .header-title { font-size: 20px; font-weight: bold; letter-spacing: 0.5px; }
+  .header-social a { display: inline-flex; align-items: center; margin-left: 12px; -webkit-tap-highlight-color: transparent;}
+  .header-social img { width: 22px; height: 22px; display: block; transition: filter 0.2s ease; -webkit-tap-highlight-color: transparent;}
+  .header-social a:hover img { filter: brightness(1) invert(1) sepia(1) hue-rotate(180deg) saturate(3); }
+
+  /* ===== FOOTER ===== */
+  footer { background: #111827; color: white; padding: 20px; font-size: 14px; text-align: center; margin-top: 9%; }
+  footer nav { margin-bottom: 8px; }
+  footer nav a { color: white; text-decoration: none; margin: 0 10px; -webkit-tap-highlight-color: transparent;}
+  footer nav a:hover { text-decoration: underline; }
+  img {border-radius: 6px;}
+    </style>
+</head>
+<body>
+     <!-- ===== HEADER ===== -->
+<header>
+  <div class="header-content">
+    <div class="header-title">Teenpattiapps.store</div>
+    <div class="header-social">
+      <a href="https://t.me/rummygamerz" target="_blank" aria-label="Telegram">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD6xfRsdv1PoNCHLU-MLxHy8MsNyLWtDYG-kL87N0WW_fCxnsBkcLOA61jgtSL7NB2G7KvrvrOAWYYe1TM5pb5-zeNSvBR0qLPO6GKK6jolHNF6vzwsJ6STlg8JwdFd2Ad3khZodDFpfJemKTUxOmERS2osOeRTiQ1vAkmqoRGG1IpQ_U4kO0RATncBOA/s1280/20250822_192842.jpg" alt="Telegram" />
+      </a>
+      <!--<a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>-->
+      <a href="https://youtube.com/@teenpattiappstore?si=dJnvHehG6m-zkF20" target="_blank" aria-label="YouTube">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7nFNM1LBCzja-1qqP7_2eFygSPxk-j7em-z8UXVZuHHNBsZoI_AZZrnvB_KAHj59G6EEx8RbtxTHhxto7CSEFiEZn4OYddkz_m30QVyakN0I778AJK7qap94NXttTRNMBWCEu2hBr-28-tpAEKI6bFoy3rp3wDgqqJPUyBUXrB8kZPPXIQOEjuGmMAuQ/s1280/20250822_192421.jpg" alt="YouTube">
+      </a>
+    </div>
+  </div>
+</header>
+    <h1>Privacy Policy</h1>
+    <p>
+        Your privacy is important to us. This Privacy Policy explains how we collect, use, 
+        and protect your information when you use our website.
+    </p>
+    <p>
+        We may collect personal information such as your name, email address, and any 
+        other details you provide voluntarily. This information will be used solely to 
+        improve our services and communicate with you.
+    </p>
+    <p>
+        We will never sell or share your personal information with third parties, except 
+        as required by law.
+    </p>
+    <p>
+        By using our website, you agree to the terms of this Privacy Policy. 
+        We may update this policy from time to time, and any changes will be posted here.
+    </p>
+    <!-- FOOTER -->
+<footer>
+  <nav>
+      <a href="index.html">Home</a> |
+    <a href="About.html">About</a> |
+    <a href="Contact.html">Contact</a> |
+    <a href="Privacy policy.html">Privacy Policy</a> |
+    <a href="Terms.html">T&amp;C</a>
+  </nav>
+  <div>© <span id="year"></span> Teenpattiapps. All rights reserved.</div>
+</footer>
+<!--Disable Text highlights and right click -->
+<script type='text/javascript'>
+//<![CDATA[
+document.addEventListener("contextmenu", function(e) { e.preventDefault(); });
+
+document.onkeydown = function(e) {
+  if (
+    e.keyCode === 123 ||
+    (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(String.fromCharCode(e.keyCode))) ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  ) {
+    e.preventDefault();
+    return false;
+  }
+};
+
+let pressTimer;
+document.addEventListener('touchstart', function() {
+  pressTimer = setTimeout(function() {
+    // Silent long press block
+  }, 500);
+});
+document.addEventListener('touchend', function() {
+  clearTimeout(pressTimer);
+});
+//]]>
+</script>
+</body>
+</html>
